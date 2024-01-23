@@ -69,7 +69,7 @@ export const HeroWrapper: FC<IHeroWrapper> = ({
     });
 
     return () => ctx.revert();
-  }, [end, yAirpodsTo]);
+  }, []);
 
   useLayoutEffect(() => {
     if (!startScrollBefore) {
@@ -93,7 +93,7 @@ export const HeroWrapper: FC<IHeroWrapper> = ({
     });
 
     return () => ctx.revert();
-  }, [startScrollBefore]);
+  }, []);
 
   return (
     <section className={styles.section} ref={wrapperRef}>
