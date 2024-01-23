@@ -1,0 +1,117 @@
+.section {
+  background: #F9F9F9;
+  height: 100dvh;
+  position: relative;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+
+  .airpods {
+    position: absolute;
+    top: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: visible;
+    display: flex;
+    justify-content: space-between;
+
+    width: 45vw;
+    height: 100vh;
+    z-index: 3;
+
+    img {
+      height: 70vh;
+      width: auto;
+    }
+
+    img:nth-child(2) {
+      margin-top: 15vh;
+    }
+  }
+
+
+  .heading {
+    color: #1D1D1F;
+
+    text-align: center;
+    font-family: "SF Pro Display";
+    will-change: auto;
+  }
+
+  .headingText {
+    font-size: 123.906px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 102.543px; 
+    letter-spacing: -0.231px;
+    margin-bottom: 12px;
+    transform-origin: bottom center;
+    will-change: auto;
+  }
+
+  .headingInfo {
+    font-size: 22.431px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30.978px; 
+    letter-spacing: 0.247px;
+    will-change: auto;
+  }
+
+  .headingPrice {
+    font-size: 22.431px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30.978px; 
+    letter-spacing: 0.247px;
+    will-change: auto;
+  }
+
+  .actions {
+    position: absolute;
+    bottom: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .buy {
+      padding: 13px 24px;
+      border-radius: 1046.792px;
+      background: #0071E3;
+      color: white;
+
+      font-family: "Helvetica Neue";
+      font-size: 18.159px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21.363px;
+    }
+
+    .about {
+      color: #06C;
+      font-family: "SF Pro Display";
+      font-size: 22.431px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30.978px;
+      letter-spacing: 0.247px;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      white-space: nowrap;
+
+      &::after {
+        content: '';
+        background: url('images/arrow.svg');
+        display: block;
+        width: 10.158px;
+        height: 22.431px;
+        
+      }
+    }
+  }
+}

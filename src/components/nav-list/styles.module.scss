@@ -1,0 +1,16 @@
+.navList, .bar, .barMain {
+  display: flex;
+  margin: 10px 0;
+  gap: 22px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navList {
+    justify-content: space-between;
+    width: 90vw;
+  }
+
+  .bar {
+    display: none;
+  }
+}

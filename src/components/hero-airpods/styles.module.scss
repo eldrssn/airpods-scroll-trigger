@@ -1,0 +1,47 @@
+
+
+.airpods {
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: visible;
+  display: flex;
+  justify-content: space-between;
+
+  width: 45vw;
+  height: 100vh;
+  z-index: 3;
+
+  img {
+    height: 70vh;
+    width: auto;
+  }
+
+  img:nth-child(2) {
+    margin-top: 15vh;
+  }
+}
+
+  .headingText {
+    font-size: 123.906px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 102.543px; 
+    letter-spacing: -0.231px;
+    margin-bottom: 12px;
+    transform-origin: bottom center;
+    will-change: auto;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .airpods {
+      width: 80vw;
+      height: auto;
+    
+      img {
+        height: 100%;
+        width: 40%;
+      }
+    }
+  }

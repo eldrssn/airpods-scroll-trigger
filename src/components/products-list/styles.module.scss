@@ -1,0 +1,140 @@
+.section {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  will-change: auto;
+
+  .heading {
+    margin-top: 30vh;
+    color: #1D1D1F;
+
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: clamp(40px, 15vw, 64px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.058px;
+    will-change: auto;
+  }
+
+  .list {
+    column-gap: 34px;
+    margin-bottom:50px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    will-change: auto;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .item {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+    padding-bottom: 26px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #D2D2D7;
+    will-change: auto;
+
+    img {
+      align-self: flex-end;
+      justify-self: center;
+      padding-bottom: 50px;
+      will-change: auto;
+    }
+
+    .title {
+      color: #1D1D1F;
+
+      text-align: center;
+      font-family: "SF Pro Display";
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0.216px;
+      will-change: auto;
+    }
+
+    .description {
+      color: #1D1D1F;
+
+      text-align: center;
+      font-family: "Helvetica Neue";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -0.224px;
+      padding-bottom: 15px;
+      will-change: auto;
+    }
+
+    .price {
+      color: #1D1D1F;
+      text-align: center;
+      font-family: "Helvetica Neue";
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21.001px;
+      letter-spacing: -0.374px;
+      padding-bottom: 15px;
+      will-change: auto;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+
+      .buy {
+        padding: 4px 12px;
+        border-radius: 1046.792px;
+        background: #0071E3;
+        color: white;
+
+        font-family: "Helvetica Neue";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+
+      .about {
+        color: #06C;
+        font-family: "SF Pro Display";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.224px;
+        display: flex;
+        gap: 6px;
+        align-items: flex-end;
+
+        &::after {
+          content: '';
+          background: url('images/arrow.svg');
+          background-position: center;
+          background-size: contain;
+          display: block;
+          width: 5.96px;
+          height: 14px;
+
+        }
+      }
+    }
+  }
+}

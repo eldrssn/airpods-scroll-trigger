@@ -1,0 +1,39 @@
+.airpods {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-content: center;
+  margin-top: 10vh;
+
+  img {
+    width: 35vw;
+  }
+}
+
+.headingText {
+  font-size: clamp(80px, 20vw, 200px);
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150.543px;
+  letter-spacing: -0.231px;
+  margin-bottom: 12px;
+  transform-origin: bottom center;
+  will-change: auto;
+}
+
+.actions {
+  bottom: 10vh !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .airpods {
+    margin-top: 20vh;
+  
+    img {
+      width: 110vw;
+    }
+  }
+}
