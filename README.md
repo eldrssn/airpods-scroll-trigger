@@ -4,7 +4,7 @@
 
 # Smooth scroll-triggered animation 🎉
 
-This web application created using modern technologies to demonstrate attractive and smooth animation when scrolling a page. The project is built using Vite, TypeScript, GSAP and the Locomotive Scroll library to control the scroll animation.
+This web application created using modern technologies to demonstrate attractive and smooth animation when scrolling a page. The project is built using React, TypeScript, GSAP and the Locomotive Scroll library to control the scroll animation.
 
 ## Key Features: 🧑🏽‍💻
 
